@@ -152,17 +152,134 @@ a{
     background-color: #717fe0;
 }
 
+
 /* carousel */
 
 #carouselExampleInterval .bi-caret-right-fill,#carouselExampleInterval .bi-caret-left-fill{
     display: none;
+     font-size: 35px;
+     color: #717fe0;
 }
 
 #carouselExampleInterval:hover .bi-caret-right-fill,#carouselExampleInterval:hover .bi-caret-left-fill{
     display: block;
-    color: #717fe0;
-    font-size: 35px;
+      
 }
+
+
+/* Banner cards */
+
+.sec-banner{
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+
+
+.block1{
+    position: relative;
+    border: 1px solid #e6e6e6;
+    width: 368px;
+    height: 248px;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+.block1 a{
+    padding: 34px 38px;
+}
+
+.block1-txt{
+    background-color: rgba(103,117,214,0.0);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.block1-txt-child1{
+    display: flex;
+    flex-direction: column;
+}
+
+.block1-name{
+    font-family: Poppins;
+    font-weight: bold;
+    color: #333;
+    font-size: 28px;
+    line-height: 1.1; 
+    transition: all 0.4s;
+    padding-bottom: 8px;  
+}
+
+
+.block1-info {
+    transition: all 0.4s;
+    color: #555;
+    font-weight: 300;
+    font-size:14px;
+}
+
+.block1-txt-child2{
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+    transition: all 0.5s;
+    padding-bottom: 4px;
+    transform: scaleX(0);
+    width: 82px;
+}
+
+.block1-txt:hover {
+    background-color: rgba(103,117,214,0.8);
+}
+
+.block1-txt:hover .block1-name, .block1-txt:hover .block1-info{
+    color: #fff;
+}
+.block1-txt:hover .block1-txt-child2{
+    transform:scaleX(1);
+}
+
+
+.block1-link{
+    transform: translateY(250%);
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.block1-txt:hover .block1-link {
+    transform: translateY(0%);
+    
+}
+
+
+
+
+
 
 
 
