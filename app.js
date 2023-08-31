@@ -13,3 +13,13 @@ window.onwheel = event => {
       headerNav.classList.add('.header-nav')
     }
   }
+
+const likeButton = document.querySelector('.likeButton');
+likeButton.addEventListener('mouseover',() => {
+  likeButton.classList.remove('bi-heart');
+  likeButton.classList.add('bi-heart-fill');
+})
+likeButton.addEventListener('mouseout',() => {
+  likeButton.classList.remove('bi-heart-fill');
+  likeButton.classList.add('bi-heart');
+})
