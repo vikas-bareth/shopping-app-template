@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap');
 
 
 a{
@@ -452,7 +454,139 @@ header{
 }
 
 
+/* footer */
+footer{
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(34,34,34);
+    color:white;
+    padding:60px 10px 20px;
+}
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.footer-main{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+}
 
+.footer-card{
+    width: 260px;
+    height: 240px;
+    padding: 0px 15px 50px;
+    
+}
+.footer-card ul{
+    list-style: none;
+     padding-left: 0;  
+}
+.footer-card ul li{
+    padding-bottom: 10px;
+}
+.footer-card ul li a, .footer-card p{
+    color: rgb(178, 178, 178);
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+}
 
+.footer-card h4{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+}
+
+.social-links a{
+   color:#b2b2b2;
+   transition: all 0.4s;
+   font-size: 18px;
+   margin-right: 16px;
+}
+.social-links a:hover{
+    color: #717fe0;
+}
+
+/* email input form*/
+
+.mail-form-input input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 2px solid #666666;
+    padding-bottom: 4px;
+    transition: border 200ms ease-in-out;
+    font-size: 10px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.923;
+}
+.mail-form-input input:focus{
+     border-bottom: 2px solid #717fe0;
+    width: 100%;
+    padding-bottom: 4px;
+    outline: none;
+    transition: border 200ms ease-in-out;
+
+}
+
+.form-button{
+    margin-left: 10px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    width: 70%;
+    margin-top: 20px;
+    background-color: #717fe0;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
+}
+.form-button:hover{
+    color: #717fe0;
+    background-color: #fff;
+}
+
+/* secondary footer */
+.footer-second{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.payment-partners a{
+    margin-right: 7px;
+}
+
+.copyright-text{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.923;
+    color: #888;
+}
 
