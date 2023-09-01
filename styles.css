@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
 
 
 a{
@@ -590,3 +591,246 @@ footer{
     color: #888;
 }
 
+/* carousel item and animations */
+
+.carousel-item{
+    position:relative;
+}
+
+.main-slide-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 180px;
+}
+
+.category span{
+    display: inline-block;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2857;
+    color: #333;
+    
+}
+
+
+.item h2{
+    padding-bottom: 43px;
+    padding-top: 19px;
+    margin: 0px;
+    font-family: Playfair Display SC;
+    color: #333;
+    font-size: 60px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    
+}
+
+.main-button a{
+    padding: 10px 35px;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: #717fe0;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 0.3px;
+    transition: all 0.4s ease;
+}
+.main-button:hover a{
+    border-color: #222;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+/* slides animations */
+.first-slide-caption{
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+}
+
+.first-slide-heading{
+    animation-name:fadeInUp;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+
+.first-slide-button{
+    animation-name:zoomIn;
+    animation-duration: 3s;
+}
+
+
+/* second slide animations */
+.second-slide-caption{
+    animation-name:rollIn;
+    animation-duration: 1.5s;
+}
+.second-slide-heading{
+    animation-name: lightSpeedIn;
+    animation-duration: 2.5s;
+}
+.second-slide-button{
+    animation-name:slideInUp;
+    animation-duration: 2s;
+}
+
+.third-slide-caption{
+    animation-name:rotateInDownLeft;
+    animation-duration: 1.5s;
+}
+.third-slide-heading{
+    animation-name: rotateInUpRight;
+    animation-duration: 2s;
+}
+.third-slide-button{
+    animation-name:rotating;
+    animation-duration: 1s;
+}
+
+
+/* animations keyframes */
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* fadeinup */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* zoomIn */
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+
+  /* rollin */
+
+  @keyframes rollIn {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* slowlySpeedIn */
+  @keyframes lightSpeedIn {
+    from {
+      transform: translate3d(100%, 0, 0) skewX(-30deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(-5deg);
+      opacity: 1;
+    }
+  
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  /* slideup */
+  @keyframes slideInUp {
+    from {
+      transform: translate3d(0, 200%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* rotateinfromleft */
+  @keyframes rotateInDownLeft {
+    from {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, -45deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform-origin: left bottom;
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  /* rotateIn up form right */
+  @keyframes rotateInUpRight {
+    from {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, -90deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform-origin: right bottom;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  /* rotate and come inside */
+  @keyframes rotating{
+    from{
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+    to{
+        transform-origin: center;
+        transform:none;
+    }
+  }
+
+
+  
