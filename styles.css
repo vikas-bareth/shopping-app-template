@@ -1127,7 +1127,15 @@ header .top-bar{
 }
 .copyright-text{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.header-nav{
+    padding-top: 15px;
+}
+.form-button{
+    margin-left: 35px;
 }
 
 }
